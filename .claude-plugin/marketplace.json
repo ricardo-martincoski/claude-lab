@@ -1,0 +1,8 @@
+{
+  "name": "claude-lab",
+  "owner": { "name": "Ricardo Martincoski", "email": "ricardo.martincoski@gmail.com" },
+  "metadata": {
+    "description": "Experimental Claude Code plugins (mods, skills and more), installable as a plugin marketplace"
+  },
+  "plugins": []
+}
