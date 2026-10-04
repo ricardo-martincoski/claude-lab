@@ -1,0 +1,60 @@
+{
+  "name": "warn-usage",
+  "version": "1.0.0",
+  "description": "Warns when context window usage or 5-hour/7-day session usage limits reach a threshold",
+  "license": "MIT",
+  "author": {
+    "name": "Ricardo Martincoski",
+    "email": "ricardo.martincoski@gmail.com"
+  },
+  "userConfig": {
+    "contextWarnAt": {
+      "type": "number",
+      "title": "Context window usage warning (%)",
+      "description": "Context window usage that raises a warning, from 1 to 100",
+      "default": 80,
+      "min": 1,
+      "max": 100
+    },
+    "sessionWarnAt": {
+      "type": "number",
+      "title": "5-hour session usage limit warning (%)",
+      "description": "5-hour session usage limit that raises a warning, from 1 to 100",
+      "default": 80,
+      "min": 1,
+      "max": 100
+    },
+    "weekWarnAt": {
+      "type": "number",
+      "title": "7-day session usage limit warning (%)",
+      "description": "7-day session usage limit that raises a warning, from 1 to 100",
+      "default": 80,
+      "min": 1,
+      "max": 100
+    },
+    "contextToastSeconds": {
+      "type": "number",
+      "title": "Context window usage warning duration (seconds)",
+      "description": "How long this warning stays on screen, from 4 to 60 seconds",
+      "default": 30,
+      "min": 4,
+      "max": 60
+    },
+    "sessionToastSeconds": {
+      "type": "number",
+      "title": "5-hour session usage limit warning duration (seconds)",
+      "description": "How long this warning stays on screen, from 4 to 60 seconds",
+      "default": 30,
+      "min": 4,
+      "max": 60
+    },
+    "weekToastSeconds": {
+      "type": "number",
+      "title": "7-day session usage limit warning duration (seconds)",
+      "description": "How long this warning stays on screen, from 4 to 60 seconds",
+      "default": 30,
+      "min": 4,
+      "max": 60
+    }
+  }
+}

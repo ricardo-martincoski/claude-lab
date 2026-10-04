@@ -8,7 +8,12 @@
     {
       "name": "show-usage",
       "source": "./plugins/show-usage",
-      "description": "Shows context usage and usage limits in the status line; warns at 80% context usage"
+      "description": "Shows context window usage and 5-hour/7-day session usage limits in the status line"
+    },
+    {
+      "name": "warn-usage",
+      "source": "./plugins/warn-usage",
+      "description": "Warns when context window usage or 5-hour/7-day session usage limits reach a threshold"
     }
   ]
 }

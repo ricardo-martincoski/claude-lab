@@ -6,14 +6,18 @@ Experimental Claude Code plugins (mods, skills and more), installable as a plugi
 
 | Plugin | What it does |
 | --- | --- |
-| [show-usage](plugins/show-usage) | Shows context usage and usage limits in the status line; warns at 80% context usage |
+| [show-usage](plugins/show-usage) | Shows context window usage and 5-hour/7-day session usage limits in the status line |
+| [warn-usage](plugins/warn-usage) | Warns when context window usage or 5-hour/7-day session usage limits reach a threshold |
 
 ## Install
 
 ```
 /plugin marketplace add ricardo-martincoski/claude-lab
 /plugin install show-usage@claude-lab
+/plugin install warn-usage@claude-lab
 ```
+
+Install either plugin, or both.
 
 ### From a local clone
 
@@ -24,6 +28,7 @@ changes take effect after `/reload-plugins`:
 git clone https://github.com/ricardo-martincoski/claude-lab.git ~/claude-lab
 /plugin marketplace add ~/claude-lab
 /plugin install show-usage@claude-lab
+/plugin install warn-usage@claude-lab
 ```
 
 ## Develop
