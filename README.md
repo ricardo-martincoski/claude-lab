@@ -6,13 +6,13 @@ Experimental Claude Code plugins (mods, skills and more), installable as a plugi
 
 | Plugin | What it does |
 | --- | --- |
-| [context-usage](plugins/context-usage) | Shows context window usage in the status line and warns when it reaches 80% |
+| [show-usage](plugins/show-usage) | Shows context usage and usage limits in the status line; warns at 80% context usage |
 
 ## Install
 
 ```
 /plugin marketplace add ricardo-martincoski/claude-lab
-/plugin install context-usage@claude-lab
+/plugin install show-usage@claude-lab
 ```
 
 ### From a local clone
@@ -23,7 +23,7 @@ changes take effect after `/reload-plugins`:
 ```
 git clone https://github.com/ricardo-martincoski/claude-lab.git ~/claude-lab
 /plugin marketplace add ~/claude-lab
-/plugin install context-usage@claude-lab
+/plugin install show-usage@claude-lab
 ```
 
 ## Develop
@@ -31,20 +31,20 @@ git clone https://github.com/ricardo-martincoski/claude-lab.git ~/claude-lab
 Load a plugin for a single session, without installing it:
 
 ```
-claude --plugin-dir plugins/context-usage
+claude --plugin-dir plugins/show-usage
 ```
 
 Validate and test it:
 
 ```
-claude plugin validate plugins/context-usage
-claude plugin test plugins/context-usage
+claude plugin validate plugins/show-usage
+claude plugin test plugins/show-usage
 ```
 
 Type-check it (TypeScript 5.4 or newer):
 
 ```
-tsc -p plugins/context-usage
+tsc -p plugins/show-usage
 ```
 
 The plugin's `tsconfig.json` extends type declarations that Claude Code generates in

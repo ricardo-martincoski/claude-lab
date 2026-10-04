@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "context-usage",
-      "source": "./plugins/context-usage",
-      "description": "Shows context window usage in the status line and warns when it reaches 80%"
+      "name": "show-usage",
+      "source": "./plugins/show-usage",
+      "description": "Shows context usage and usage limits in the status line; warns at 80% context usage"
     }
   ]
 }

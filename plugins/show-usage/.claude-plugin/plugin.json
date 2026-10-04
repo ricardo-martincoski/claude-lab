@@ -1,7 +1,7 @@
 {
-  "name": "context-usage",
+  "name": "show-usage",
   "version": "1.0.0",
-  "description": "Shows context window usage in the status line and warns when it reaches 80%",
+  "description": "Shows context usage and usage limits in the status line; warns at 80% context usage",
   "license": "MIT",
   "author": { "name": "Ricardo Martincoski", "email": "ricardo.martincoski@gmail.com" }
 }
