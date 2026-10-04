@@ -1,0 +1,7 @@
+{
+  "name": "context-usage",
+  "version": "1.0.0",
+  "description": "Shows context window usage in the status line and warns when it reaches 80%",
+  "license": "MIT",
+  "author": { "name": "Ricardo Martincoski", "email": "ricardo.martincoski@gmail.com" }
+}

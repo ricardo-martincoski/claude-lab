@@ -1,0 +1,5 @@
+# Type declarations Claude Code generates next to a plugin whenever it loads it from a local
+# directory (claude --plugin-dir <plugin>).
+# Each plugin's tsconfig.json extends them, so in a fresh clone `tsc -p <plugin>` only works after
+# loading that plugin once with --plugin-dir.
+.claude-plugin/types/

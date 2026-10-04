@@ -4,5 +4,11 @@
   "metadata": {
     "description": "Experimental Claude Code plugins (mods, skills and more), installable as a plugin marketplace"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "context-usage",
+      "source": "./plugins/context-usage",
+      "description": "Shows context window usage in the status line and warns when it reaches 80%"
+    }
+  ]
 }
